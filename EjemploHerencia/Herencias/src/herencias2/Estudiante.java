@@ -5,7 +5,6 @@
  */
 package herencias2;
 
-
 /**
  *
  * @author reroes
@@ -17,7 +16,7 @@ public class Estudiante extends Persona{
         super(n, a, e);
         setMatricula(mat);
     }
-    
+
     @Override
     public void setNombre(String n){
         nombre = n.toUpperCase();    
@@ -41,6 +40,6 @@ public class Estudiante extends Persona{
     @Override
     public String toString(){
     
-        return String.format("%s - %f", super.toString(), getMatricula());
+        return String.format("%s - %.2f", super.toString(), getMatricula());
     }
 }
